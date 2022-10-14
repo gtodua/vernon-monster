@@ -22,7 +22,7 @@ title: Vernon Monster Smash
 # email: sdeminick@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The 2022 Vernon Monster Smash volleyball tournament
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/vernon-monster-smash" # the subpath of your site, e.g. /blog
 url: "https://www.vernonmonstersmash.ca" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: skyvolleyball
 # github_username:  jekyll
