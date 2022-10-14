@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<style>
+  .page-author { display: block; }
+  .author-avatar { display: inline; margin-bottom: 1em; width: 100px; height: 100px; border-radius: 100px; }
+  .author-links { display: block; }
+  .page-header { text-align: center; }
+
+  .layout--custom .page-content { display: flex; flex-flow: row wrap; gap: 20px 50px;justify-content: space-around; }
+  /* .layout--custom .page-header { grid-column: 1 / -1; clear: both; } */
+  .layout--custom .page-sidebar { width:150px; flex-basis:auto;flex-grow: 1; }
+  .layout--custom .page-content .e-content { width:300px; flex-basis:auto; flex-grow: 4;}
+</style>
+
+<main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    {% include page-image.html %}
+    <div class="page-wrapper">
+      <header class="page-header">
+        {% assign title = page.title | markdownify | strip_html %}
+        {% if page.link %}
+          <h1 id="page-title" class="page-title p-name"><a href="{{ page.link }}">{{ title }} <span class="link-arrow">&rarr;</span></a></h1>
+        {% else %}
+          <h1 id="page-title" class="page-title p-name">{{ title }}</h1>
+        {% endif %}
+      </header>
+
+      <div class="page-content">
+        <div>
+          {{ page.description }}
+        </div>  
+        <div class="e-content">
+          {{ content }}          
+        </div>
+        <div class="page-sidebar">
+          <h2>Sponsors</h2>
+          {% include page-author.html %}
+        </div>
+      </div>      
+
+    </div>
+  </article>
+</main>

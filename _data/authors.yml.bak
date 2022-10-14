@@ -1,0 +1,17 @@
+Billy Rick:
+  name: Billy Rick
+  picture: /images/bio-photo-2.jpg
+  twitter: "@skyvolleyball"
+  links:
+    - title: Twitter
+      url: https://twitter.com/skyvolleyball
+      icon: fab fa-twitter-square
+    - title: Instagram
+      url: https://www.instagram.com/skyvolleyballclub/
+      icon: fab fa-instagram
+    - title: Facebook
+      url: https://www.facebook.com/skyvolleyball
+      icon: fab fa-facebook
+    - title: YouTube
+      url: https://www.youtube.com/channel/UCCrrDJBmonFL0vLAZtBJEXw
+      icon: fab fa-youtube
