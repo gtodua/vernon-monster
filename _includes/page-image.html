@@ -5,7 +5,7 @@
   {% endunless %}
   {% assign page_image = page_image | escape %}
 
-  <a class="page-image" href="{{ page.url }}">
+  <a class="page-image" href="{{ site.url }}">
     <img src="{{ page_image }}" class="entry-feature-image u-photo" alt="{{ page.title }}" {% unless site.logo %}style="margin-top: 0;"{% endunless %}>
     {% if page.image.caption %}
       <div class="page-image-caption">{{ page.image.caption | markdownify }}</div>
